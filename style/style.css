@@ -1,0 +1,38 @@
+@import 'header.css';
+@import 'body.css';
+
+:root {
+  --background-color: #010000;
+  --secondary-background-color: #4a454b;
+  --primary-color: #fc030372;
+  --secondary-color: #f6fa03;
+  --primary-font-family: Arial, Helvetica, sans-serif;
+  --secondary-font-family: Consolas, monaco, monospace;
+  --primary-font-color: #fafbfc84;
+  --shadow-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #353535;
+  }
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-font-color);
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  border: inherit;
+  padding: inherit;
+}
